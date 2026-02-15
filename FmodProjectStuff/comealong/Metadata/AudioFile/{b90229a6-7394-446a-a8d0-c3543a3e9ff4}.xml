@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{b90229a6-7394-446a-a8d0-c3543a3e9ff4}">
+		<property name="assetPath">
+			<value>SFX/rundirt2.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.80537414965986398</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6b0b4c5-e89c-431a-b524-9f2d2cf8cf35}</destination>
+		</relationship>
+	</object>
+</objects>

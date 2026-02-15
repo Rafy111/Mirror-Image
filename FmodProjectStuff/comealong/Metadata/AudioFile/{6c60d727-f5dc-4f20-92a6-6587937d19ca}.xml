@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{6c60d727-f5dc-4f20-92a6-6587937d19ca}">
+		<property name="assetPath">
+			<value>Music/CP - Lumiere Combat Theme.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>182.40000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6b0b4c5-e89c-431a-b524-9f2d2cf8cf35}</destination>
+		</relationship>
+	</object>
+</objects>
