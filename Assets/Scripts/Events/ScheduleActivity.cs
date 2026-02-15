@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class ScheduleActivity : MonoBehaviour
 {
@@ -65,9 +67,13 @@ public class ScheduleActivity : MonoBehaviour
     int RundownActivityIdSelected;
     bool RundownActivitySelected = false;
 
+    EventInstance FootstepInstance;
+
 
     void Start()
     {
+        FootstepInstance = FmodAudioManager.instance.CreateSoundInstance(FmodEvents.instance.Sfx_Footstep);
+
         CommonData = GetComponent<CommonData>();
         AllObjectPoints = new List<List<Transform>>{ObjectsBedroom, ObjectsLivingRoom, ObjectsKitchen, ObjectsBathroom};
         SetMood(4);
@@ -222,6 +228,8 @@ public class ScheduleActivity : MonoBehaviour
         {
             CharaAnimator.SetTrigger("isWalking");
 
+            FootstepInstance.start();
+
             TargetRoom = RoomPoints[CurrentRoom - 1];
 
             if (CharaObject.position.x > TargetRoom.position.x) CharaObject.localScale = new Vector3(-1f, CharaObject.localScale.y, CharaObject.localScale.z);
@@ -262,6 +270,8 @@ public class ScheduleActivity : MonoBehaviour
             }
 
             CharaAnimator.SetTrigger("isIdle");
+
+            FootstepInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
 
         if (CurrentActivitySc.EnergyNeeded <= CommonData.Energy && CurrentActivitySc.StressLimit >= CommonData.Stress)

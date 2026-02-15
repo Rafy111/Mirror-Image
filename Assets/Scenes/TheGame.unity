@@ -7523,18 +7523,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Music:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2049410855
+      Data2: 1258723650
+      Data3: -155121532
+      Data4: 1673209597
+    Path: event:/Music
   Sfx_Notification:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1709641287
+      Data2: 1085243294
+      Data3: 369574822
+      Data4: 613256634
+    Path: event:/Notif
   Sfx_SpeedUp:
     Guid:
       Data1: 0
@@ -7549,6 +7549,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  Sfx_Footstep:
+    Guid:
+      Data1: -496329849
+      Data2: 1339228278
+      Data3: -1956211300
+      Data4: -1677796618
+    Path: event:/Footsteps
 --- !u!114 &287959319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7561,6 +7568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596edec9494a2bf4bb68b8ce11c74944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayMusicAtStartup: 0
 --- !u!1 &289443310
 GameObject:
   m_ObjectHideFlags: 0

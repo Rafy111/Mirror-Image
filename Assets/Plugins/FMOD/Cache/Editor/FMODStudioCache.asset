@@ -83,10 +83,10 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639067744358276938
+  lastModified: 639067872497923490
   FileSizes:
   - Name: Desktop
-    Value: 23712
+    Value: 1900736
   Exists: 1
 --- !u!114 &-5288614274557427033
 MonoBehaviour:
@@ -190,10 +190,10 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639067744355680686
+  lastModified: 639067872496629515
   FileSizes:
   - Name: Desktop
-    Value: 968
+    Value: 1152
   Exists: 1
 --- !u!114 &-116433589171941141
 MonoBehaviour:
@@ -241,18 +241,81 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 5288722896628273019}
   - {fileID: -6801138423487790544}
+  - {fileID: 7854458152632178325}
+  - {fileID: 315939728908855127}
+  - {fileID: 1605204270085896191}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4548912072897854507}
   StringsBanks:
   - {fileID: -1411864178728561052}
   cacheVersion: 131858
-  cacheTime: 639067744358276938
+  cacheTime: 639067872497923490
   SerializableEventsDict:
   - key: event:/Footsteps
     index: 0
   - key: event:/Music
     index: 1
+  - key: event:/Outdoor ver 2
+    index: 2
+  - key: event:/Outdoor
+    index: 3
+  - key: event:/Notif
+    index: 4
+--- !u!114 &315939728908855127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Outdoor
+  m_EditorClassIdentifier: 
+  Path: event:/Outdoor
+  Guid:
+    Data1: 305839048
+    Data2: 1169172775
+    Data3: -1795302505
+    Data4: 1083166315
+  Banks:
+  - {fileID: -6757861543064952575}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150883
+--- !u!114 &1605204270085896191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notif
+  m_EditorClassIdentifier: 
+  Path: event:/Notif
+  Guid:
+    Data1: 1709641287
+    Data2: 1085243294
+    Data3: 369574822
+    Data4: 613256634
+  Banks:
+  - {fileID: -6757861543064952575}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5288722896628273019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,3 +343,55 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 720
+--- !u!114 &5900631743231897363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Outdoor ver 2/ambience_intensity
+  m_EditorClassIdentifier: 
+  Name: ambience_intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 330589182
+    data2: 4081923561
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7854458152632178325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Outdoor ver 2
+  m_EditorClassIdentifier: 
+  Path: event:/Outdoor ver 2
+  Guid:
+    Data1: 977790230
+    Data2: 1308523480
+    Data3: 1114528896
+    Data4: -799834161
+  Banks:
+  - {fileID: -6757861543064952575}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5900631743231897363}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150883
