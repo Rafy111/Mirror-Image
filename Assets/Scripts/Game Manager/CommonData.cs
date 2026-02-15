@@ -277,6 +277,7 @@ public class CommonData : MonoBehaviour
                 if (!GameStarted)
                 {
                     GameStarted = true;
+                    FmodAudioManager.instance.PlayMusic(FmodEvents.instance.Music);
                     //MusicManager.Play();
                 }
 
@@ -429,9 +430,13 @@ public class CommonData : MonoBehaviour
     // Audio -------------------------------------------------------------------//
     public void RestartMusicDaily()
     {
+        /*
         MusicManager.Stop();
         MusicManager.volume = PlayerPrefs.GetFloat("musicVolume") * PlayerPrefs.GetFloat("masterVolume");
         if (MusicManager.clip != Mus_Daily) MusicManager.clip = Mus_Daily;
         MusicManager.Play();
+        */
+
+        FmodAudioManager.instance.PlayMusic(FmodEvents.instance.Music);
     }
 }
