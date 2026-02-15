@@ -50,7 +50,7 @@ public class ChatSystem : MonoBehaviour
     {
         CommonData = GetComponent<CommonData>();
         DailyEvents = GetComponent<DailyEvents>();
-        SoundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>();
+        //SoundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>();
     }
 
     public void StartNewDialogue(List<string> Dialogue)
@@ -180,7 +180,8 @@ public class ChatSystem : MonoBehaviour
     {
         if (!PlayerInChatRoom)
         {
-            SoundManager.PlayOneShot(Sfx_Notif);
+            //SoundManager.PlayOneShot(Sfx_Notif);
+            FmodAudioManager.instance.PlayOneSound(FmodEvents.instance.Sfx_Notification, transform.position);
             NotifIcon.SetActive(true);
             NotifFromPhone.SetActive(true);
             if (CurrentUnreadLabel == null) CurrentUnreadLabel = Instantiate(Chat_Unread, ChatHolder);

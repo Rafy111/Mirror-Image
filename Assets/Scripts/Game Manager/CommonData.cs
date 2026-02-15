@@ -277,7 +277,7 @@ public class CommonData : MonoBehaviour
                 if (!GameStarted)
                 {
                     GameStarted = true;
-                    MusicManager.Play();
+                    //MusicManager.Play();
                 }
 
                 PhoneBg.sprite = PhoneBgChat;
