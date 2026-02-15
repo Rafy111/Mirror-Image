@@ -20,7 +20,7 @@ public class AudioVolumeLoad : MonoBehaviour
         if (!PlayerPrefs.HasKey("soundVolume"))
             PlayerPrefs.SetFloat("soundVolume", 1);
 
-        GameObject.FindGameObjectWithTag("MusicManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume") * PlayerPrefs.GetFloat("masterVolume");
-        GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume") * PlayerPrefs.GetFloat("masterVolume");
+       // GameObject.FindGameObjectWithTag("MusicManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume") * PlayerPrefs.GetFloat("masterVolume");
+       // GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume") * PlayerPrefs.GetFloat("masterVolume");
     }
 }

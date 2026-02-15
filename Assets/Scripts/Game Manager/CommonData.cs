@@ -97,8 +97,8 @@ public class CommonData : MonoBehaviour
         ChatSystem = GetComponent<ChatSystem>();
         ScheduleActivity = GetComponent<ScheduleActivity>();
         DailyEvents = GetComponent<DailyEvents>();
-        MusicManager = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<AudioSource>();
-        SoundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>();
+        //MusicManager = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<AudioSource>();
+        //SoundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>();
 
         TempDays = Days;
         SetDayText();
