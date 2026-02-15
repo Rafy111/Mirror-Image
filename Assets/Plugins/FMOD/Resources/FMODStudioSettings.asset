@@ -330,8 +330,10 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
@@ -344,21 +346,21 @@ MonoBehaviour:
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131858
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   LastEventReferenceScanVersion: 131858
   Platforms:
-  - {fileID: -4353764040801578256}
-  - {fileID: -3877398233163269897}
-  - {fileID: -3804142489771632580}
-  - {fileID: -709637527739058842}
-  - {fileID: 778142483604137840}
-  - {fileID: 1610147964473023258}
-  - {fileID: 1827756239134580730}
-  - {fileID: 3058496207095134554}
-  - {fileID: 3061404738372817733}
-  - {fileID: 4592137950340996997}
   - {fileID: 6519298398793812918}
+  - {fileID: 3058496207095134554}
+  - {fileID: 1610147964473023258}
+  - {fileID: -3877398233163269897}
+  - {fileID: 4592137950340996997}
+  - {fileID: 778142483604137840}
+  - {fileID: 3061404738372817733}
+  - {fileID: -709637527739058842}
   - {fileID: 6830785894607778509}
+  - {fileID: -3804142489771632580}
+  - {fileID: 1827756239134580730}
+  - {fileID: -4353764040801578256}
   MigratedPlatforms: 0a00000000000000150000000b00000009000000050000001200000008000000060000000c0000000200000001000000
 --- !u!114 &778142483604137840
 MonoBehaviour:
@@ -649,16 +651,16 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - b7716510a1f36934c87976f3a81dbf3d
-  - c88d16e5272a4e241b0ef0ac2e53b73d
-  - 46fbfdf3fc43db0458918377fd40293e
-  - 52eb9df5db46521439908db3a29a1bbb
-  - e7a046c753c3c3d4aacc91f6597f310d
   - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - de700ef3f37a49b58a57ae3addf01ad9
-  - fd7c55dab0fce234b8c25f6ffca523c1
+  - c88d16e5272a4e241b0ef0ac2e53b73d
   - 2c5177b11d81d824dbb064f9ac8527da
+  - e7a046c753c3c3d4aacc91f6597f310d
+  - fd7c55dab0fce234b8c25f6ffca523c1
+  - 52eb9df5db46521439908db3a29a1bbb
   - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 46fbfdf3fc43db0458918377fd40293e
+  - de700ef3f37a49b58a57ae3addf01ad9
+  - b7716510a1f36934c87976f3a81dbf3d
   codecChannels:
     Value: []
     HasValue: 0
