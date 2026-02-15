@@ -108,6 +108,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{71b68c11-ca98-46a1-8489-ddfcb5eb9be6}" />
 	<object class="EventSound" id="{a3a5906b-568b-4a4d-a23c-d30023c981a3}">
+		<relationship name="modulators">
+			<destination>{9e66534a-017d-430e-8539-9c76c4e3bd97}</destination>
+		</relationship>
 		<relationship name="event">
 			<destination>{20957f17-3a25-423a-9c19-e928c2d0862c}</destination>
 		</relationship>
@@ -119,6 +122,9 @@
 		<property name="name">
 			<value>high_intensity</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{95b33639-3eab-4633-b731-f563799f64e8}</destination>
+		</relationship>
 		<relationship name="event">
 			<destination>{d1fed8b4-9cf9-44a4-b2ce-836fe8ec2ab1}</destination>
 		</relationship>
@@ -164,6 +170,40 @@
 	</object>
 	<object class="MixerBusPanner" id="{d0c33ae4-3b74-40c9-a893-935b70993024}" />
 	<object class="MixerBusFader" id="{903fc24b-5c96-466b-8867-8a9653816de0}" />
+	<object class="ADSRModulator" id="{9e66534a-017d-430e-8539-9c76c4e3bd97}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>3000</value>
+		</property>
+		<property name="releaseTime">
+			<value>3000</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{95b33639-3eab-4633-b731-f563799f64e8}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>3000</value>
+		</property>
+		<property name="releaseTime">
+			<value>3000</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{69f12e9b-58ac-4076-9292-8cb3520251bf}">
 		<relationship name="effects">
 			<destination>{4959db77-bde0-47e9-99fe-79900c907e42}</destination>
