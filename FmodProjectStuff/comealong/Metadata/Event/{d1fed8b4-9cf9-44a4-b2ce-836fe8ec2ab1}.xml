@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d1fed8b4-9cf9-44a4-b2ce-836fe8ec2ab1}">
 		<property name="name">
-			<value>high_intensity</value>
+			<value>combat</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

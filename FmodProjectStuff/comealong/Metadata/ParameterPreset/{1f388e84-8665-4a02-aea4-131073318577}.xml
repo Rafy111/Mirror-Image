@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{1f388e84-8665-4a02-aea4-131073318577}">
 		<property name="name">
-			<value>music intensity</value>
+			<value>music crossfade</value>
 		</property>
 		<relationship name="folder">
 			<destination>{88a631a1-9e3b-4d1e-8d5e-1eb137d9cdbc}</destination>
