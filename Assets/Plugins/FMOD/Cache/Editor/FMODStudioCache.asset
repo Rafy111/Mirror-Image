@@ -83,7 +83,7 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639067733320459197
+  lastModified: 639067744358276938
   FileSizes:
   - Name: Desktop
     Value: 23712
@@ -150,7 +150,7 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639067733275316915
+  lastModified: 639067712854600417
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 639067733319711713
+  lastModified: 639067744357769967
   FileSizes:
   - Name: Desktop
     Value: 4534656
@@ -190,7 +190,7 @@ MonoBehaviour:
   Path: FmodProjectStuff/comealong/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639067733275327014
+  lastModified: 639067744355680686
   FileSizes:
   - Name: Desktop
     Value: 968
@@ -247,10 +247,12 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -1411864178728561052}
   cacheVersion: 131858
-  cacheTime: 639067733320459197
+  cacheTime: 639067744358276938
   SerializableEventsDict:
   - key: event:/Footsteps
     index: 0
+  - key: event:/Music
+    index: 1
 --- !u!114 &5288722896628273019
 MonoBehaviour:
   m_ObjectHideFlags: 0
